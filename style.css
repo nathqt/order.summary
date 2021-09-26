@@ -1,0 +1,179 @@
+
+@font-face {
+    font-family: RedhatDisplay;
+    src: url(font/RedHatDisplay-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: RedhatDisplayB;
+    src: url(font/RedHatDisplay-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: RedhatDisplayM;
+    src: url(font/RedHatDisplay-Medium.ttf);
+}
+
+
+body{
+    font-family: RedhatDisplay;
+    text-align: center;
+    margin: 1.3in;
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: hsl(228, 100%, 95%);
+} 
+.content{
+    object-fit: initial;
+    size: inherit;
+    margin: 0 33%;
+    display: grid;
+    grid-template-rows: 220px 470px;
+    grid-template-columns: 350px;
+    
+    
+}
+
+.i{
+    border-radius: 10px 10px 0 0;
+    background-image: url(images/illustration-hero.svg);
+    background-position:center;
+}
+
+
+
+.text{
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 28px;  
+}
+p{
+    font-size: 16px;
+    font-family: RedhatDisplayM;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.plan{
+    display: grid;
+    grid-template-columns: 65px 120px 1fr;
+    grid-template-rows: 1fr;
+    margin:0 35px;
+    padding: 20px 20px 0 20px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: hsl(225, 100%, 98%)
+}
+.plan .change{
+    font-size: 16px;
+    font-family: RedhatDisplayM;
+    color:hsl(251, 38%, 48%);;
+    text-decoration: underline;
+}
+
+.proceed{
+    font-size: 14px;
+    font-weight: bold;
+    color: #f0f0f0;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    margin: 30px 35px;
+    padding: 12px;
+    background-color: hsl(251, 63%, 47%);
+    box-shadow: 8px 25px 20px #d6d4ec
+}
+.cancel{
+    margin-top:36px;
+    margin-bottom: 35px;
+
+}
+
+.attribution{
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+}
+
+.plan .change:hover{
+    position: relative;
+    top: -4px;
+    right: 2px;
+    text-decoration: none;
+}
+
+.proceed:hover{
+    background-color: #7763cf;
+}
+
+.cancel:hover{
+    font-family: RedhatDisplayM;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 375px){
+    body{
+        font-family: RedhatDisplay;
+        margin: 20px;
+        background: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(228, 100%, 95%);
+    } 
+    .content{
+        text-align: center;
+        size: inherit;
+        margin: 0px;
+        display: grid;
+        grid-template-rows: 220px 470px;
+        grid-template-columns: 330px;
+        border: 1px solid #0000;
+        
+    }
+    .plan{
+        display: grid;
+        grid-template-columns: 65px 90px 1fr;
+        grid-template-rows: 1fr;
+        margin:20px 25px;
+        padding: 10px 10px 10px 10px;
+        text-align: left;
+        font-weight: bold;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        background-color: hsl(225, 100%, 98%)
+    }
+    h1{
+        margin: 30px;
+        font-size: 28px;  
+    }
+    p{
+        font-size: 16px;
+        font-family: RedhatDisplayM;
+        color: grey;
+        margin: 0 30px;
+    }
+
+    .plan .change{
+        margin-top: 10px;
+        position:relative;
+        font-size: 14px;
+        font-family: RedhatDisplayM;
+        color:hsl(251, 38%, 48%);;
+        text-decoration: underline;
+    }
+    .plan .change:hover{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        text-decoration: none;
+    }
+    
+    
+    .plan #annual{
+        margin: 0%;
+    }
+
+}
